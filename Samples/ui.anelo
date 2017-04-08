@@ -1,0 +1,27 @@
+/*Developed 
+*By 
+*Yachareni Krishnakanth 
+*@16/02/2017 */
+import java.awt.Color
+
+start
+	decobj Window w
+	setobj w as new Window( "Simple GUI", 320, 120, false, 3 )
+	
+	do w.usingLabels(1)
+		do w.addLabel(0, "Welcome to Anello Programming!      ")
+		do w.showLabel(0, (int)((320-w.labelWidth[0])/2), 20)
+	
+	do w.usingButtons(1)
+		do w.addButton(0, "Close")
+		do w.showButton(0, (int)((320-w.buttonWidth[0])/2), 60)
+	
+	do w.getContentPane().setBackground(Color.WHITE)
+	do w.setVisible( true )
+	
+	loop true
+		if w.pressed( "Close" )
+			do w.end()
+		end
+	end
+end

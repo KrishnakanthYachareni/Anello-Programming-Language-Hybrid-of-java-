@@ -1,0 +1,11 @@
+start
+	decvar a, b, c, d, x1, x2
+	set a as io.take("Enter value of a: ")
+	set a as io.take("Enter value of b: ")
+	set a as io.take("Enter value of c: ")
+	set d as Math.sqrt((b.num*b.num)-(4*a.num*c.num))
+	set x1 as ((-1*b.num)+d.num)/(2*a.num)
+	set x2 as ((-1*b.num)-d.num)/(2*a.num)
+	print "Roots are:\t"+x1.txt+ "\t" +x2.txt
+	wait
+end

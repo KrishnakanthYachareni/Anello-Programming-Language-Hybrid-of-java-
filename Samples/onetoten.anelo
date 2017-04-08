@@ -1,0 +1,16 @@
+/*Developed 
+*By 
+*Yachareni Krishnakanth 
+*@16/02/2017 */
+start
+	decvar n, f
+	set n as 100
+	set f as 1
+	loop n.num >=1
+		print"\t"+f.txt
+		set f as f.num+1
+		
+		dec n by 1
+	end
+	wait
+end

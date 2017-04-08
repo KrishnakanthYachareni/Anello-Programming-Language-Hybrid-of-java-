@@ -1,0 +1,22 @@
+/*Developed 
+*By 
+*Yachareni Krishnakanth 
+*@16/02/2017 */
+start
+	decvar file, temp
+	
+	print "Enter file name: "
+	take file
+	
+	do io.write( file.txt, false, "" )
+	print "File created. Enter text:\n\n"
+	
+	take temp
+	loop !temp.txt.equals( "" )
+		do io.writeln( file.txt, true, temp.txt )
+		take temp
+	end
+	
+	print "File saved."
+	wait	
+end

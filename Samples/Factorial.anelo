@@ -1,0 +1,19 @@
+/*Developed 
+*By 
+*Yachareni Krishnakanth 
+*@16/02/2017 */
+start
+	decvar n, f
+	
+	print "Enter a number: "
+	take n
+	
+	set f as 1
+	loop n.num > 1
+		set f as f.num*n.num
+		dec n by 1
+	end
+	
+	print "Factorial = " +f.txt
+	wait
+end

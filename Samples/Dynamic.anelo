@@ -1,0 +1,12 @@
+/*Developed 
+*By 
+*Yachareni Krishnakanth 
+*@6/04/2017 */
+
+start
+decvar n
+print "Enter Value\n"
+take n
+print "Entered Value is : "+n.txt
+wait
+end

@@ -1,0 +1,19 @@
+start
+	decobj Window w
+	setobj w as new Window( "Simple Menu Bar", 500, 400, false, 3 )
+	
+	do w.addMenuBar(5, 5)
+	do w.addMenu(0, "File")
+		do w.addMenuItem(0, 0, "New")
+		do w.addMenuItem(0, 1, "Open")
+		do w.addMenuItem(0, 2, "Save")
+		do w.addMenuItem(0, 3, "Save As")
+		do w.addMenuItem(0, 4, "Close")
+	do w.addMenu(0, "Edit")
+		do w.addMenuItem(0, 0, "Undo")
+		do w.addMenuItem(0, 1, "Cut")
+		do w.addMenuItem(0, 2, "copy")
+		do w.addMenuItem(0, 3, "paste")
+	do w. setVisible(true)
+	wait
+end

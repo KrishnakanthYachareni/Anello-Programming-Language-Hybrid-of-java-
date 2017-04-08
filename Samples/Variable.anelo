@@ -1,0 +1,12 @@
+/*Developed 
+*By 
+*Yachareni Krishnakanth 
+*@6/04/2017 */
+
+start
+decvar a, b
+set a as 100
+set b as "Welcome String"
+print "The String is : "+b.txt+"\nThe Number is :"+a.txt
+wait
+end

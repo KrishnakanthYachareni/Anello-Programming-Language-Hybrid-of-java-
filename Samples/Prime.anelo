@@ -1,0 +1,20 @@
+start
+	decvar a, p
+	set a as io.take("Enter a number: ")
+	set p as (prime(a)).bool
+	print "Primality:"+p.txt+"\n"
+	wait
+end
+sub var prime(var n)
+	decvar i, flag
+	set i as  2
+	set flag as 1
+	loop i.num<=(n.num/2)
+		if n.num%i.num == 0 && n.num != 2
+			set flag as false
+			break
+		end
+		set i as i.num+1
+	end
+	return flag
+end

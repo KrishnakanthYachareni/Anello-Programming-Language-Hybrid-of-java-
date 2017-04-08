@@ -1,0 +1,14 @@
+start
+	decvar p, n
+	print "Enter A Number \n"
+	take n
+	set p as (prime(n)).num
+	print "Square of a number from function is: "+p.txt
+	wait
+end
+sub var prime(var n)
+	decvar i
+	print "This is a Function \n"
+	set i as n.num*n.num
+	return i
+end
